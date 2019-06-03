@@ -1,4 +1,0 @@
-
-   $( "#draggable" ).draggable({
-       axis: 'y'
-   });

@@ -1,4 +1,4 @@
-# build-a-burger
+# Build a Burger
 
 Create a make your own burger application.  
 Using jQuery UI, you are to design a application which will allow you to create your own burger, and then output the total price for your burger.
