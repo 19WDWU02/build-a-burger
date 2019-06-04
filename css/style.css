@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+}
+
+#yourBurgerContainer{
+    max-height: 80%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+#burger{
+    width: 100%;
+    transform-origin: 50% 50%;
+}
+
+.fillings,
+.yourBurger{
+    height: 80vh;
+}
+
+.droppableArea{
+    min-height: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.droppableArea p{
+    margin-bottom: 0;
+}
+
+.bashedBorder{
+    border: 1px black dashed;
+}
+
+.hovering{
+    border: 1px red dashed;
+    color: red;
+}
+
+.draggable{
+    z-index: 100;
+}
+
+.ui-draggable-dragging{
+    z-index: 200;
+}
