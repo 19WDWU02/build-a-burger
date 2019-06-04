@@ -21,38 +21,89 @@
                 </div>
                 <div id="burgerContainer" class="row text-dark">
                     <div class="col-8">
-                        <div class="card p-3 fillings">
-                            <h3 class="border-bottom">Fillings</h3>
-                            <div class="row buns">
+                        <div class="card p-3 fillings bg-secondary text-white text-center">
+                            <h3 class="border-bottom pb-2">Fillings</h3>
+                            <div class="row border-bottom py-3 align-items-center buns">
                                 <div class="col-12">
                                     <h5>Buns</h5>
                                 </div>
-                                <div class="col-4 p-1 draggable buns" data-bun="1" data-price="1">
+                                <div class="col-4 p-1 draggable foodItem buns" data-bun="1" data-price="1">
                                     <img src="images/bun1-top.png" class="img-fluid" alt="">
                                 </div>
-                                <div class="col-4 p-1 draggable buns" data-bun="2" data-price="2">
+                                <div class="col-4 p-1 draggable foodItem buns" data-bun="2" data-price="2">
                                     <img src="images/bun2-top.png" class="img-fluid" alt="">
                                 </div>
-                                <div class="col-4 p-1 draggable buns" data-bun="3" data-price="3">
+                                <div class="col-4 p-1 draggable foodItem buns" data-bun="3" data-price="3">
                                     <img src="images/bun3-top.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <div class="row border-bottom py-3 align-items-center meats">
+                                <div class="col-12">
+                                    <h5>Meats</h5>
+                                </div>
+                                <div class="col-4 p-1 draggable foodItem meat" data-price="4">
+                                    <img src="images/meat1.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-4 p-1 draggable foodItem meat" data-price="5">
+                                    <img src="images/meat2.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-4 p-1 draggable foodItem meat" data-price="6">
+                                    <img src="images/meat3.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <div class="row border-bottom py-3 align-items-center cheeses">
+                                <div class="col-12">
+                                    <h5>Cheeses</h5>
+                                </div>
+                                <div class="col-4 p-1 draggable foodItem cheese" data-price="7">
+                                    <img src="images/cheese1.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-4 p-1 draggable foodItem cheese" data-price="8">
+                                    <img src="images/cheese2.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-4 p-1 draggable foodItem cheese" data-price="9">
+                                    <img src="images/cheese3.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <div class="row border-bottom py-3 align-items-center salads">
+                                <div class="col-12">
+                                    <h5>Salads</h5>
+                                </div>
+                                <div class="col-4 p-1 draggable foodItem salad" data-price="10">
+                                    <img src="images/tomato.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-4 p-1 draggable foodItem salad" data-price="11">
+                                    <img src="images/lettuce.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-4 p-1 draggable foodItem salad" data-price="12">
+                                    <img src="images/onion.png" class="img-fluid" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="card p-3 yourBurger flex-column justify-content-between">
-                            <h3 class="border-bottom">Your Burger</h3>
+                        <div class="card p-3 yourBurger flex-column justify-content-between bg-secondary text-white text-center">
+                            <h3 class="border-bottom pb-2">Your Burger</h3>
                             <div id="yourBurgerContainer">
                                 <div id="burger">
                                     <div id="topDroppable" class="droppableArea bashedBorder invalid">
                                         <p>Choose a Bun</p>
                                     </div>
+                                    <div id="saladDroppable" class="droppableArea bashedBorder invalid">
+                                        <p>Choose your salads</p>
+                                    </div>
+                                    <div id="cheeseDroppable" class="droppableArea bashedBorder invalid">
+                                        <p>Choose your Cheese</p>
+                                    </div>
+                                    <div id="meatDroppable" class="droppableArea bashedBorder invalid">
+                                        <p>Choose your Meat</p>
+                                    </div>
+                                    <div id="bunBottom"></div>
                                 </div>
                             </div>
                             <div class="footer">
                                 <h3>Total Price $<span id="totalPrice">0.00</span></h3>
                             </div>
-
                         </div>
                     </div>
                 </div>

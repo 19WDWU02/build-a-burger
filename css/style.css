@@ -41,12 +41,12 @@ html, body{
 }
 
 .bashedBorder{
-    border: 1px black dashed;
+    border: 1px white dashed;
 }
 
 .hovering{
-    border: 1px red dashed;
-    color: red;
+    border: 1px #e74c3c dashed;
+    color: #e74c3c;
 }
 
 .draggable{
