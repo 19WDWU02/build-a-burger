@@ -2,10 +2,7 @@ $(document).ready(function(){
 
     $('.draggable').draggable({
         containment: "#burgerContainer",
-        helper: "clone",
-        drag: function(event, ui){
-
-        }
+        helper: "clone"
     });
 
     $('#topDroppable').droppable({
@@ -18,7 +15,7 @@ $(document).ready(function(){
         },
         drop: function( event, ui ) {
             $(this).removeClass('bashedBorder hovering').empty();
-            var element = ui.draggable.clone().removeClass('col-4').addClass('col');
+            var element = ui.draggable.clone().removeClass('col-4');
             $(this).append(element);
         }
     });
