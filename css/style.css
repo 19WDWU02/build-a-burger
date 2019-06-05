@@ -21,6 +21,11 @@ html, body{
     transform-origin: 50% 50%;
 }
 
+.foodItem:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 .fillings,
 .yourBurger{
     height: 80vh;
@@ -55,4 +60,5 @@ html, body{
 
 .ui-draggable-dragging{
     z-index: 200;
+    width: 100%;
 }
